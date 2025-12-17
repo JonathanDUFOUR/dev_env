@@ -1,0 +1,220 @@
+# Configuration file for dircolors, a utility to help you set the
+# LS_COLORS environment variable used by GNU ls with the --color option.
+# Copyright (C) 1996-2022 Free Software Foundation, Inc.
+# Copying and distribution of this file, with or without modification,
+# are permitted provided the copyright notice and this notice are preserved.
+# The keywords COLOR, OPTIONS, and EIGHTBIT (honored by the
+# slackware version of dircolors) are recognized but ignored.
+# Global config options can be specified before TERM or COLORTERM entries
+# Below are TERM or COLORTERM entries, which can be glob patterns, which
+# restrict following config to systems with matching environment variables.
+COLORTERM ?*
+TERM Eterm
+TERM ansi
+TERM *color*
+TERM con[0-9]*x[0-9]*
+TERM cons25
+TERM console
+TERM cygwin
+TERM *direct*
+TERM dtterm
+TERM gnome
+TERM hurd
+TERM jfbterm
+TERM konsole
+TERM kterm
+TERM linux
+TERM linux-c
+TERM mlterm
+TERM putty
+TERM rxvt*
+TERM screen*
+TERM st
+TERM terminator
+TERM tmux*
+TERM vt100
+TERM xterm*
+# Below are the color init strings for the basic file types.
+# One can use codes for 256 or more colors supported by modern terminals.
+# The default color codes use the capabilities of an 8 color terminal
+# with some additional attributes as per the following codes:
+# Attribute codes:
+# 00=none 01=bold 04=underscore 05=blink 07=reverse 08=concealed
+# Text color codes:
+# 30=black 31=red 32=green 33=yellow 34=blue 35=magenta 36=cyan 37=white
+# Background color codes:
+# 40=black 41=red 42=green 43=yellow 44=blue 45=magenta 46=cyan 47=white
+DIR 1;37 # directory
+LINK 1;95 # symbolic link.
+MULTIHARDLINK 00 # regular file with more than one link
+FIFO 33;40 # pipe
+SOCK 1;35 # socket
+DOOR 1;35 # door
+BLK 1;33;40 # block device driver
+CHR 1;33;40 # character device driver
+ORPHAN 1;31;40 # symlink to nonexistent file, or non-stat'able file ...
+MISSING 0 # ... and the files they point to
+SETUID 37;41 # file that is setuid (u+s)
+SETGID 30;43 # file that is setgid (g+s)
+CAPABILITY 0 # file with capability (very expensive to lookup)
+STICKY_OTHER_WRITABLE 30;42 # dir that is sticky and other-writable (+t,o+w)
+OTHER_WRITABLE 34;42 # dir that is other-writable (o+w) and not sticky
+STICKY 37;44 # dir with the sticky bit set (+t) and not other-writable
+EXEC 1;38;2;200;84;0 # files with execute permission
+
+# List any file extensions like '.gz' or '.tar' that you would like ls
+# to color below. Put the extension, a space, and the color init string.
+# (and any comments you want to add after a '#')
+# If you use DOS-style suffixes, you may want to uncomment the following:
+#.cmd 01;32 # executables (bright green)
+#.exe 01;32
+#.com 01;32
+#.btm 01;32
+#.bat 01;32
+# Or if you want to color scripts even if they do not have the
+# executable bit actually set.
+#.sh 01;32
+#.csh 01;32
+
+# archives or compressed (bright red)
+.tar  1;31
+.tgz  1;31
+.arc  1;31
+.arj  1;31
+.taz  1;31
+.lha  1;31
+.lz4  1;31
+.lzh  1;31
+.lzma 1;31
+.tlz  1;31
+.txz  1;31
+.tzo  1;31
+.t7z  1;31
+.zip  1;31
+.z    1;31
+.dz   1;31
+.gz   1;31
+.lrz  1;31
+.lz   1;31
+.lzo  1;31
+.xz   1;31
+.zst  1;31
+.tzst 1;31
+.bz2  1;31
+.bz   1;31
+.tbz  1;31
+.tbz2 1;31
+.tz   1;31
+.deb  1;31
+.rpm  1;31
+.jar  1;31
+.war  1;31
+.ear  1;31
+.sar  1;31
+.rar  1;31
+.alz  1;31
+.ace  1;31
+.zoo  1;31
+.cpio 1;31
+.7z   1;31
+.rz   1;31
+.cab  1;31
+.wim  1;31
+.swm  1;31
+.dwm  1;31
+.esd  1;31
+
+# image formats
+.avif  1;35
+.jpg   1;35
+.jpeg  1;35
+.mjpg  1;35
+.mjpeg 1;35
+.gif   1;35
+.bmp   1;35
+.pbm   1;35
+.pgm   1;35
+.ppm   1;35
+.tga   1;35
+.xbm   1;35
+.xpm   1;35
+.tif   1;35
+.tiff  1;35
+.png   1;35
+.svg   1;35
+.svgz  1;35
+.mng   1;35
+.pcx   1;35
+.mov   1;35
+.mpg   1;35
+.mpeg  1;35
+.m2v   1;35
+.mkv   1;35
+.webm  1;35
+.webp  1;35
+.ogm   1;35
+.mp4   1;35
+.m4v   1;35
+.mp4v  1;35
+.vob   1;35
+.qt    1;35
+.nuv   1;35
+.wmv   1;35
+.asf   1;35
+.rm    1;35
+.rmvb  1;35
+.flc   1;35
+.avi   1;35
+.fli   1;35
+.flv   1;35
+.gl    1;35
+.dl    1;35
+.xcf   1;35
+.xwd   1;35
+.yuv   1;35
+.cgm   1;35
+.emf   1;35
+# https://wiki.xiph.org/MIME_Types_and_File_Extensions
+.ogv   1;35
+.ogx   1;35
+
+# audio formats
+.aac  0;36
+.au   0;36
+.flac 0;36
+.m4a  0;36
+.mid  0;36
+.midi 0;36
+.mka  0;36
+.mp3  0;36
+.mpc  0;36
+.ogg  0;36
+.ra   0;36
+.wav  0;36
+# https://wiki.xiph.org/MIME_Types_and_File_Extensions
+.oga  0;36
+.opus 0;36
+.spx  0;36
+.xspf 0;36
+
+# backup files
+*~         00;90
+*#         00;90
+.bak       00;90
+.old       00;90
+.orig      00;90
+.part      00;90
+.rej       00;90
+.swp       00;90
+.tmp       00;90
+.dpkg-dist 00;90
+.dpkg-old  00;90
+.ucf-dist  00;90
+.ucf-new   00;90
+.ucf-old   00;90
+.rpmnew    00;90
+.rpmorig   00;90
+.rpmsave   00;90
+
+# Subsequent TERM or COLORTERM entries, can be used to add / override
+# config specific to those matching environment variables.
