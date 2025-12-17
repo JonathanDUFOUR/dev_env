@@ -1,0 +1,137 @@
+{
+  "Double inclusion protection": {
+    "prefix": ["def", "define"],
+    "body": [
+      "#ifndef ${TM_FILENAME/([a-zA-Z0-9]*)(\\.)*/${1:/upcase}${2:+_}/g}",
+      "#define ${TM_FILENAME/([a-zA-Z0-9]*)(\\.)*/${1:/upcase}${2:+_}/g}",
+      "$1",
+      "#endif"
+    ]
+  },
+  "Attribute": {
+    "prefix": ["attr", "attribute", "__attr", "__attribute"],
+    "body": "__attribute__(($1))"
+  },
+  "Attribute alias": {
+    "prefix": "alias",
+    "body": "__attribute__((alias(\"$1\")))"
+  },
+  "Attribute nonnull": {
+    "prefix": "nonnull",
+    "body": "__attribute__((nonnull$1))"
+  },
+  "Attribute unused": {
+    "prefix": "unused",
+    "body": "__attribute__((unused$1))"
+  },
+  "Builtin assume": {
+    "prefix": "assume",
+    "body": "__builtin_assume($1)"
+  },
+  "Builtin unreachable": {
+    "prefix": "unreachable",
+    "body": "__builtin_unreachable()"
+  },
+  "Region block": {
+    "prefix": ["reg", "region"],
+    "body": [
+      // this comment is to prevent ugly single-line formatting
+      "#pragma region [$1]",
+      "#pragma endregion"
+    ]
+  },
+  "Disable Clang-Format": {
+    "prefix": ["off", "disable", "clang-format off"],
+    "body": "// clang-format off"
+  },
+  "Enable Clang-Format": {
+    "prefix": ["on", "enable", "clang-format on"],
+    "body": "// clang-format on"
+  },
+  "Section types": {
+    "prefix": "type_section",
+    "body": [
+      // this comment is to prevent ugly single-line formatting
+      "// ┏━━━━━━━┓",
+      "// ┃ Types ┃",
+      "// ┗━━━━━━━┛"
+    ]
+  },
+  "Section fields": {
+    "prefix": "field_section",
+    "body": [
+      // this comment is to prevent ugly single-line formatting
+      "// ┏━━━━━━━━┓",
+      "// ┃ Fields ┃",
+      "// ┗━━━━━━━━┛"
+    ]
+  },
+  "Section constructor": {
+    "prefix": "constructor_section",
+    "body": [
+      // this comment is to prevent ugly single-line formatting
+      "// ┏━━━━━━━━━━━━━━┓",
+      "// ┃ Constructors ┃",
+      "// ┗━━━━━━━━━━━━━━┛"
+    ]
+  },
+  "Section destructor": {
+    "prefix": "destructor_section",
+    "body": [
+      // this comment is to prevent ugly single-line formatting
+      "// ┏━━━━━━━━━━━━┓",
+      "// ┃ Destructor ┃",
+      "// ┗━━━━━━━━━━━━┛"
+    ]
+  },
+  "Section accessor": {
+    "prefix": "accessor_section",
+    "body": [
+      // this comment is to prevent ugly single-line formatting
+      "// ┏━━━━━━━━━━━┓",
+      "// ┃ Accessors ┃",
+      "// ┗━━━━━━━━━━━┛"
+    ]
+  },
+  "Section mutator": {
+    "prefix": "mutator_section",
+    "body": [
+      // this comment is to prevent ugly single-line formatting
+      "// ┏━━━━━━━━━━┓",
+      "// ┃ Mutators ┃",
+      "// ┗━━━━━━━━━━┛"
+    ]
+  },
+  "Section method": {
+    "prefix": "method_section",
+    "body": [
+      // this comment is to prevent ugly single-line formatting
+      "// ┏━━━━━━━━━┓",
+      "// ┃ Methods ┃",
+      "// ┗━━━━━━━━━┛"
+    ]
+  },
+  "Section operator": {
+    "prefix": "operator_section",
+    "body": [
+      // this comment is to prevent ugly single-line formatting
+      "// ┏━━━━━━━━━━━┓",
+      "// ┃ Operators ┃",
+      "// ┗━━━━━━━━━━━┛"
+    ]
+  },
+  "Try-catch block": {
+    "prefix": ["try", "tc"],
+    "body": [
+      // this comment is to prevent ugly single-line formatting
+      "try",
+      "{",
+      "\t$1",
+      "}",
+      "catch (std::exception const &e)",
+      "{",
+      "\tstd::cerr << \"Exception: \" << e.what() << '\\n';",
+      "}"
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "Function inlining": {
+    "prefix": "inline",
+    "body": ["#[inline(always)]$0"],
+    "description": "Attribute to strongly encourage inlining a function"
+  },
+  "Unit test": {
+    "prefix": "test",
+    "body": ["// region: $1", "#[test]", "fn $1() {", "\thelper($2);", "}", "// endregion"]
+  },
+  "Region block": {
+    "prefix": "region",
+    "body": ["// region: $1", "// endregion"]
+  }
+}

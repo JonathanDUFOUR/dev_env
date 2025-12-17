@@ -1,0 +1,5 @@
+CompilerFlags:
+  Add:
+    - "<flag>"
+    - "<flag>"
+    ...

@@ -1,0 +1,325 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  // ┌────────────────────────────┐
+  // │ Silent default keybindings │
+  // └────────────────────────────┘
+  {
+    "context": "AcpThread > (Editor && use_modifier_to_send)",
+    "bindings": {
+      "ctrl-enter": null,
+      "ctrl-shift-r": null
+    }
+  },
+  {
+    "context": "AcpThread > (Editor && !use_modifier_to_send)",
+    "bindings": {
+      "enter": null,
+      "ctrl-shift-r": null
+    }
+  },
+  {
+    "context": "AgentPanel",
+    "bindings": {
+      "ctrl-shift-enter": null,
+      "ctrl-shift-e": null
+    }
+  },
+  {
+    "context": "(BufferSearchBar && in_replace) > Editor",
+    "bindings": {
+      "ctrl-enter": null
+    }
+  },
+  {
+    "context": "CommitEditor > Editor",
+    "bindings": {
+      "ctrl-enter": null,
+      "ctrl-shift-enter": null
+    }
+  },
+  {
+    "context": "ConfigureContextServerModal > Editor",
+    "bindings": {
+      "ctrl-enter": null
+    }
+  },
+  {
+    "context": "ContextEditor > Editor",
+    "bindings": {
+      "ctrl-enter": null,
+      "ctrl-r": null
+    }
+  },
+  {
+    "context": "!ContextEditor > (Editor && mode == full)",
+    "bindings": {
+      "ctrl-enter": null,
+      "ctrl-alt-enter": null
+    }
+  },
+  {
+    "context": "ContextStrip",
+    "bindings": {
+      "up": null,
+      "down": null
+    }
+  },
+  {
+    "context": "Diagnostics",
+    "bindings": {
+      "ctrl-r": null
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "alt-shift-up": null,
+      "alt-shift-down": null,
+      "alt-shift-left": null,
+      "ctrl-k ctrl-d": null,
+      "ctrl-k ctrl-shift-d": null,
+      "ctrl-shift-u": null
+    }
+  },
+  {
+    "context": "(Editor && !agent_diff)",
+    "bindings": {
+      "ctrl-k ctrl-r": null
+    }
+  },
+  {
+    "context": "Editor && (edit_prediction || edit_prediction_conflict)",
+    "bindings": {
+      "alt-right": null,
+      "alt-l": null
+    }
+  },
+  {
+    "context": "Editor && editor_agent_diff",
+    "bindings": {
+      "ctrl-shift-r": null
+    }
+  },
+  {
+    "context": "Editor && jupyter && !ContextEditor",
+    "bindings": {
+      "ctrl-alt-enter": null,
+      "ctrl-shift-enter": null
+    }
+  },
+  {
+    "context": "Editor && mode == auto_height",
+    "bindings": {
+      "ctrl-enter": null,
+      "ctrl-shift-enter": null
+    }
+  },
+  {
+    "context": "Editor && mode == full",
+    "bindings": {
+      "ctrl-enter": null,
+      "ctrl-shift-enter": null
+    }
+  },
+  {
+    "context": "GitCommit > Editor",
+    "bindings": {
+      "ctrl-enter": null,
+      "ctrl-shift-enter": null
+    }
+  },
+  {
+    "context": "GitDiff > Editor",
+    "bindings": {
+      "ctrl-enter": null,
+      "ctrl-shift-enter": null
+    }
+  },
+  {
+    "context": "GitPanel",
+    "bindings": {
+      "ctrl-enter": null,
+      "ctrl-shift-enter": null
+    }
+  },
+  {
+    "context": "InvalidBuffer",
+    "bindings": {
+      "ctrl-shift-enter": null
+    }
+  },
+  {
+    "context": "KeybindEditorModal",
+    "bindings": {
+      "ctrl-enter": null
+    }
+  },
+  {
+    "context": "(MessageEditor && !Picker) > Editor",
+    "bindings": {
+      "ctrl-enter": null
+    }
+  },
+  {
+    "context": "(MessageEditor && !Picker) > (Editor && use_modifier_to_send)",
+    "bindings": {
+      "ctrl-enter": null,
+      "ctrl-shift-r": null
+    }
+  },
+  {
+    "context": "(MessageEditor && !Picker) > (Editor && !use_modifier_to_send)",
+    "bindings": {
+      "enter": null,
+      "ctrl-enter": null,
+      "ctrl-shift-r": null
+    }
+  },
+  {
+    "context": "Onboarding",
+    "bindings": {
+      "ctrl-enter": null
+    }
+  },
+  {
+    "context": "OutlinePanel && not_editing",
+    "bindings": {
+      "ctrl-alt-enter": null,
+      "ctrl-alt-r": null
+    }
+  },
+  {
+    "context": "Pane",
+    "bindings": {
+      "ctrl-alt-shift-r": null
+    }
+  },
+  {
+    "context": "ProjectPanel",
+    "bindings": {
+      "ctrl-shift-enter": null,
+      "alt-d": null,
+      "ctrl-alt-r": null
+    }
+  },
+  {
+    "context": "(ProjectSearchBar && !in_replace)",
+    "bindings": {
+      "ctrl-enter": null
+    }
+  },
+  {
+    "context": "RunModal",
+    "bindings": {
+      "ctrl-tab": null,
+      "ctrl-shift-tab": null
+    }
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "ctrl-enter": null,
+      "alt-f": null,
+      "ctrl-alt-r": null,
+      "ctrl-shift-r": null
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-tab": null,
+      "ctrl-shift-tab": null,
+      "ctrl-?": null,
+      "ctrl-shift-b": null,
+      "ctrl-shift-d": null,
+      "ctrl-shift-e": null,
+      "ctrl-k shift-up": null,
+      "ctrl-k shift-down": null,
+      "ctrl-k shift-right": null,
+      "ctrl-k shift-left": null,
+      "ctrl-alt-r": null,
+      "ctrl-shift-r": null,
+      "ctrl-w": null
+    }
+  },
+
+  // ┌───────────────────────────┐
+  // │ Define custom keybindings │
+  // └───────────────────────────┘
+  {
+    "bindings": {
+      "ctrl-o": "workspace::OpenFiles"
+    }
+  },
+  {
+    "context": "(BufferSearchBar && in_replace) > Editor",
+    "bindings": {
+      "ctrl-alt-enter": "search::ReplaceAll"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-enter": "editor::NewlineBelow",
+      "ctrl-shift-enter": "editor::NewlineAbove",
+      "ctrl-up": "editor::SignatureHelpPrevious",
+      "ctrl-alt-up": "editor::ConvertToUpperCase",
+      "ctrl-shift-up": "editor::AddSelectionAbove",
+      "ctrl-down": "editor::SignatureHelpNext",
+      "ctrl-alt-down": "editor::ConvertToLowerCase",
+      "ctrl-shift-down": "editor::AddSelectionBelow",
+      "alt-d": "editor::GoToDiagnostic",
+      "alt-n": ["editor::SelectNext", { "replace_newest": false }],
+      "alt-p": ["editor::SelectPrevious", { "replace_newest": false }]
+    }
+  },
+  {
+    "context": "Editor && (edit_prediction || edit_prediction_conflict)",
+    "bindings": {
+      "tab": "editor::AcceptEditPrediction"
+    }
+  },
+  {
+    "context": "Editor || Pane",
+    "bindings": {
+      "alt-right": "pane::ActivateNextItem",
+      "alt-shift-right": "pane::SwapItemRight",
+      "alt-left": "pane::ActivatePreviousItem",
+      "alt-shift-left": "pane::SwapItemLeft"
+    }
+  },
+  {
+    "context": "Editor && showing_signature_help && !showing_completions",
+    "bindings": {
+      "up": "editor::MoveUp",
+      "down": "editor::MoveDown"
+    }
+  },
+  {
+    "context": "ProjectPanel && not_editing",
+    "bindings": {
+      "enter": "project_panel::OpenPermanent",
+      "alt-d": "project_panel::NewDirectory",
+      "alt-f": "project_panel::NewFile",
+      "alt-r": "project_panel::RemoveFromProject",
+      "ctrl-left": "project_panel::CollapseAllEntries"
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "alt-a": "workspace::AddFolderToProject",
+      "alt-e": "project_panel::ToggleFocus",
+      "ctrl-r": "workspace::Reload"
+    }
+  }
+  ///////////////////////////////////////////////////////////////////////////////////////////////
+  ///////////////////////////////////////////// END /////////////////////////////////////////////
+  ///////////////////////////////////////////////////////////////////////////////////////////////
+]

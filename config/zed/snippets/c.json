@@ -1,0 +1,64 @@
+{
+  "Double inclusion protection": {
+    "prefix": ["def", "define"],
+    "body": [
+      "#ifndef ${TM_FILENAME/([a-zA-Z0-9]*)(\\.)*/${1:/upcase}${2:+_}/g}",
+      "#define ${TM_FILENAME/([a-zA-Z0-9]*)(\\.)*/${1:/upcase}${2:+_}/g}",
+      "$1",
+      "#endif"
+    ]
+  },
+  "Attribute": {
+    "prefix": ["__attr", "__attribute", "attr", "attribute"],
+    "body": "__attribute__(($1))$2"
+  },
+  "Attribute alias": {
+    "prefix": "alias",
+    "body": "__attribute__((alias(\"$1\")))$2"
+  },
+  "Attribute constructor": {
+    "prefix": "constructor",
+    "body": "__attribute__((constructor))$1"
+  },
+  "Attribute destructor": {
+    "prefix": "destructor",
+    "body": "__attribute__((destructor))$1"
+  },
+  "Attribute format": {
+    "prefix": "format",
+    "body": "__attribute__((__format__($1, $2, $3)))"
+  },
+  "Attribute nonnull": {
+    "prefix": "nonnull",
+    "body": "__attribute__((nonnull$1))$2"
+  },
+  "Attribute noreturn": {
+    "prefix": "noreturn",
+    "body": "__attribute__((noreturn))"
+  },
+  "Attribute unused": {
+    "prefix": "unused",
+    "body": "__attribute__((unused$1))$2"
+  },
+  "Builtin assume": {
+    "prefix": "assume",
+    "body": "__builtin_assume($1)$2"
+  },
+  "Builtin unreachable": {
+    "prefix": "unreachable",
+    "body": "__builtin_unreachable()$1"
+  },
+
+  "Disable Clang-Format": {
+    "prefix": ["off", "disable", "clang-format off"],
+    "body": "// clang-format off"
+  },
+  "Enable Clang-Format": {
+    "prefix": ["on", "enable", "clang-format on"],
+    "body": "// clang-format on"
+  },
+  "Region block": {
+    "prefix": ["reg", "region"],
+    "body": ["/* region [$1] */", "/* endregion */"]
+  }
+}
