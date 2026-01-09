@@ -1,0 +1,6 @@
+default xkb_keymap {
+  xkb_keycodes { include "acer_predator_helios_300(axis)"   };
+  xkb_compat   { include "acer_predator_helios_300(custom)" };
+  xkb_types    { include "acer_predator_helios_300(custom)" };
+  xkb_symbols  { include "acer_predator_helios_300(custom)" };
+};

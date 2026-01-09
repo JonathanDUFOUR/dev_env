@@ -1,0 +1,7 @@
+image=$HOME/images/1920x1080/artix_wallpaper.png
+
+indicator-radius=242
+indicator-thickness=42
+
+font-size=64
+font=ProFontIIxNerdFontMono

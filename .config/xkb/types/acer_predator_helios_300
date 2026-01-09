@@ -1,0 +1,73 @@
+partial xkb_types "custom" {
+
+  type "FUNCTION" {
+    modifiers = Control+Mod1;
+    map[Control+Mod1] = Level2;
+    level_name[Level1] = "F_Key";
+    level_name[Level2] = "VT_Key";
+  };
+
+  type "LEVEL4" {
+    modifiers = Shift+Mod3;
+    map[Shift]      = Level2;
+    map[Mod3]       = Level3;
+    map[Shift+Mod3] = Level4;
+    level_name[Level1] = "Base";
+    level_name[Level2] = "Shift";
+    level_name[Level3] = "Mod";
+    level_name[Level4] = "Shift Mod";
+  };
+
+  type "HYPER" {
+    modifiers = Mod5;
+    map[Mod5]      = Level2;
+    level_name[Level1] = "Base";
+    level_name[Level2] = "Mod";
+  };
+
+  type "ALPHA2" {
+    modifiers = Shift+Lock;
+    map[Shift] = Level2;
+    map[Lock]  = Level2;
+    level_name[Level1] = "lower";
+    level_name[Level2] = "UPPER";
+  };
+
+  type "ALPHA3" {
+    modifiers = Shift+Lock+Mod3;
+    map[Shift]           = Level2;
+    map[Lock]            = Level2;
+    map[Mod3]            = Level3;
+    map[Shift+Mod3]      = Level3;
+    map[Lock+Mod3]       = Level3;
+    map[Shift+Lock+Mod3] = Level3;
+    level_name[Level1] = "lower";
+    level_name[Level2] = "UPPER";
+    level_name[Level3] = "Mod";
+  };
+
+  type "ALPHA4" {
+    modifiers = Shift+Lock+Mod3;
+    map[Shift]           = Level2;
+    map[Lock]            = Level2;
+    map[Mod3]            = Level3;
+    map[Shift+Lock]      = Level1;
+    map[Shift+Mod3]      = Level4;
+    map[Lock+Mod3]       = Level4;
+    map[Shift+Lock+Mod3] = Level3;
+    level_name[Level1] = "lower";
+    level_name[Level2] = "UPPER";
+    level_name[Level3] = "Mod lower";
+    level_name[Level4] = "Mod UPPER";
+  };
+
+  virtual_modifiers NumLock = Mod2;
+
+  type "KEYPAD" {
+    modifiers = Shift+NumLock;
+    map[Shift]   = Level1;
+    map[NumLock] = Level2;
+    level_name[Level1] = "Navigation/Edition";
+    level_name[Level2] = "Number";
+  };
+};

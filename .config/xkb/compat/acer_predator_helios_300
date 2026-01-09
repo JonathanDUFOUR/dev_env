@@ -1,0 +1,28 @@
+default partial xkb_compatibility "custom" {
+  include "acer_predator_helios_300(mods)"
+  include "acer_predator_helios_300(leds)"
+};
+
+hidden partial modifier_keys xkb_compatibility "mods" {
+  virtual_modifiers NumLock = Mod2;
+
+  interpret Control_L { action =  SetMods(modifiers=Control); };
+  interpret Control_R { action =  SetMods(modifiers=Control); };
+  interpret   Shift_L { action =  SetMods(modifiers=Shift  ); };
+  interpret   Shift_R { action =  SetMods(modifiers=Shift  ); };
+  interpret     Alt_L { action =  SetMods(modifiers=Mod1   ); };
+  interpret     Alt_R { action =  SetMods(modifiers=Mod3   ); };
+  interpret   Super_L { action =  SetMods(modifiers=Mod4   ); };
+  interpret   Hyper_L { action =  SetMods(modifiers=Mod5   ); };
+  interpret Caps_Lock { action = LockMods(modifiers=Lock   ); };
+  interpret  Num_Lock { action = LockMods(modifiers=NumLock); };
+};
+
+hidden partial xkb_compatibility "leds" {
+  indicator "Caps Lock" {
+    modifiers = Lock;
+  };
+  indicator "Num Lock" {
+    modifiers = NumLock;
+  };
+};

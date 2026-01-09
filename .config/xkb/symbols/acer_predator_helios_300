@@ -1,0 +1,159 @@
+default partial modifier_keys function_keys alphanumeric_keys keypad_keys
+xkb_symbols "custom" {
+
+  name[Group1] = "Custom Acer Predator Helios 300 Layout";
+
+  include "acer_predator_helios_300(modifier)"
+  include "acer_predator_helios_300(function)"
+  include "acer_predator_helios_300(fn)"
+  include "acer_predator_helios_300(special)"
+  include "acer_predator_helios_300(numeric)"
+  include "acer_predator_helios_300(alphabetic)"
+  include "acer_predator_helios_300(symbols)"
+  include "acer_predator_helios_300(keypad)"
+};
+
+hidden partial modifier_keys
+xkb_symbols "modifier" {
+  key <F00> {[ Control_L ]};
+  key <F07> {[ Control_R ]};
+  key <E00> {[   Shift_L ]};
+  key <E12> {[   Shift_R ]};
+  key <F03> {[     Alt_L ]};
+  key <F05> {[     Alt_R ]};
+  key <F02> {[   Super_L ]};
+  key <E01> {[   Hyper_L ]};
+  key <B14> {[  Num_Lock ]};
+  key <D00> {[ Caps_Lock ]};
+};
+
+hidden partial function_keys
+xkb_symbols "function" {
+  key <A01> { type = "FUNCTION", [ F1  , XF86_Switch_VT_1  ]};
+  key <A02> { type = "FUNCTION", [ F2  , XF86_Switch_VT_2  ]};
+  key <A03> { type = "FUNCTION", [ F3  , XF86_Switch_VT_3  ]};
+  key <A04> { type = "FUNCTION", [ F4  , XF86_Switch_VT_4  ]};
+  key <A05> { type = "FUNCTION", [ F5  , XF86_Switch_VT_5  ]};
+  key <A06> { type = "FUNCTION", [ F6  , XF86_Switch_VT_6  ]};
+  key <A07> { type = "FUNCTION", [ F7  , XF86_Switch_VT_7  ]};
+  key <A08> { type = "FUNCTION", [ F8  , XF86_Switch_VT_8  ]};
+  key <A09> { type = "FUNCTION", [ F9  , XF86_Switch_VT_9  ]};
+  key <A10> { type = "FUNCTION", [ F10 , XF86_Switch_VT_10 ]};
+  key <A11> { type = "FUNCTION", [ F11 , XF86_Switch_VT_11 ]};
+  key <A12> { type = "FUNCTION", [ F12 , XF86_Switch_VT_12 ]};
+};
+
+hidden partial function_keys
+xkb_symbols "fn" {
+  key <SLP>  {[ XF86Sleep             ]};
+  key <MUTE> {[ XF86AudioMute         ]};
+  key <VOL-> {[ XF86AudioLowerVolume  ]};
+  key <VOL+> {[ XF86AudioRaiseVolume  ]};
+  key <PLAY> {[ XF86AudioPlay         ]};
+  key <NEXT> {[ XF86AudioNext         ]};
+  key <PREV> {[ XF86AudioPrev         ]};
+  key <BRT-> {[ XF86MonBrightnessDown ]};
+  key <BRT+> {[ XF86MonBrightnessUp   ]};
+};
+
+hidden partial
+xkb_symbols "special" {
+  key <A00> {[ Escape       ]};
+  key <F06> {[ Menu         ]};
+  key <A13> {[ Print        ]};
+  key <A16> {[ Home         ]};
+  key <A17> {[ Prior        ]};
+  key <A18> {[ Next         ]};
+  key <A19> {[ End          ]};
+  key <C00> {[ Tab          ]};
+  key <C13> {[ Return       ]};
+  key <F04> {[ space        ]};
+  key <A15> {[ Delete       ]};
+  key <A20> {[ XF86PowerOff ]};
+
+  key <E13> { type = "HYPER" , [ Up        , Prior  ]};
+  key <F09> { type = "HYPER" , [ Down      , Next   ]};
+  key <F08> { type = "HYPER" , [ Left      , Home   ]};
+  key <F10> { type = "HYPER" , [ Right     , End    ]};
+  key <B13> { type = "HYPER" , [ BackSpace , Delete ]};
+};
+
+hidden partial alphanumeric_keys
+xkb_symbols "numeric" {
+  key <B01> { type = "LEVEL4" , [ 1 , exclam      , onesuperior          , exclamdown       ]};
+  key <B02> { type = "LEVEL4" , [ 2 , at          , twosuperior          , dead_doubleacute ]};
+  key <B03> { type = "LEVEL4" , [ 3 , numbersign  , threesuperior        , dead_macron      ]};
+  key <B04> { type = "LEVEL4" , [ 4 , dollar      , currency             , sterling         ]};
+  key <B05> { type = "LEVEL4" , [ 5 , percent     , EuroSign             , dead_cedilla     ]};
+  key <B06> { type = "LEVEL4" , [ 6 , asciicircum , dead_circumflex      , onequarter       ]};
+  key <B07> { type = "LEVEL4" , [ 7 , ampersand   , dead_horn            , onehalf          ]};
+  key <B08> { type = "LEVEL4" , [ 8 , asterisk    , dead_ogonek          , threequarters    ]};
+  key <B09> { type = "LEVEL4" , [ 9 , parenleft   , leftsinglequotemark  , dead_breve       ]};
+  key <B10> { type = "LEVEL4" , [ 0 , parenright  , rightsinglequotemark , dead_abovering   ]};
+};
+
+hidden partial alphanumeric_keys
+xkb_symbols "alphabetic" {
+  key <D01> { type = "ALPHA4" , [ a , A , agrave      , Agrave      ]};
+  key <E06> { type = "ALPHA2" , [ b , B                             ]};
+  key <E04> { type = "ALPHA4" , [ c , C , ccedilla    , Ccedilla    ]};
+  key <D03> { type = "ALPHA4" , [ d , D , ecircumflex , Ecircumflex ]};
+  key <C03> { type = "ALPHA4" , [ e , E , eacute      , Eacute      ]};
+  key <D04> { type = "ALPHA2" , [ f , F                             ]};
+  key <D05> { type = "ALPHA2" , [ g , G                             ]};
+  key <D06> { type = "ALPHA2" , [ h , H                             ]};
+  key <C08> { type = "ALPHA4" , [ i , I , icircumflex , Icircumflex ]};
+  key <D07> { type = "ALPHA4" , [ j , J , ucircumflex , Ucircumflex ]};
+  key <D08> { type = "ALPHA4" , [ k , K , idiaeresis  , Idiaeresis  ]};
+  key <D09> { type = "ALPHA4" , [ l , L , oe          , OE          ]};
+  key <E08> { type = "ALPHA3" , [ m , M , mu                        ]};
+  key <E07> { type = "ALPHA4" , [ n , N , ntilde      , Ntilde      ]};
+  key <C09> { type = "ALPHA4" , [ o , O , ocircumflex , Ocircumflex ]};
+  key <C10> { type = "ALPHA2" , [ p , P                             ]};
+  key <C01> { type = "ALPHA2" , [ q , Q                             ]};
+  key <C04> { type = "ALPHA4" , [ r , R , ediaeresis  , Ediaeresis  ]};
+  key <D02> { type = "ALPHA4" , [ s , S , acircumflex , Acircumflex ]};
+  key <C05> { type = "ALPHA2" , [ t , T                             ]};
+  key <C07> { type = "ALPHA4" , [ u , U , ugrave      , Ugrave      ]};
+  key <E05> { type = "ALPHA3" , [ v , V , squareroot                ]};
+  key <C02> { type = "ALPHA4" , [ w , W , egrave      , Egrave      ]};
+  key <E03> { type = "ALPHA3" , [ x , X , multiply                  ]};
+  key <C06> { type = "ALPHA4" , [ y , Y , udiaeresis  , Udiaeresis  ]};
+  key <E02> { type = "ALPHA2" , [ z , Z                             ]};
+};
+
+hidden partial
+xkb_symbols "symbols" {
+  key <B11> { type = "LEVEL4" , [ minus        , underscore  , yen            , dead_belowdot        ]};
+  key <B12> { type = "LEVEL4" , [ equal        , plus        , multiply       , division             ]};
+  key <B00> { type = "LEVEL4" , [ grave        , asciitilde  , dead_grave     , dead_tilde           ]};
+  key <C11> { type = "LEVEL4" , [ bracketleft  , braceleft   , guillemotleft  , leftdoublequotemark  ]};
+  key <C12> { type = "LEVEL4" , [ bracketright , braceright  , guillemotright , rightdoublequotemark ]};
+  key <D10> { type = "LEVEL4" , [ semicolon    , colon       , paragraph      , degree               ]};
+  key <D11> { type = "LEVEL4" , [ apostrophe   , quotedbl    , dead_acute     , dead_diaeresis       ]};
+  key <D12> { type = "LEVEL4" , [ backslash    , bar         , notsign        , brokenbar            ]};
+  key <E09> { type = "LEVEL4" , [ comma        , less        , copyright      , cent                 ]};
+  key <E10> { type = "LEVEL4" , [ period       , greater     , periodcentered , dead_abovedot        ]};
+  key <E11> { type = "LEVEL4" , [ slash        , question    , division       , questiondown         ]};
+};
+
+hidden partial keypad_keys
+xkb_symbols "keypad" {
+  key <C17> {[ KP_Add      ]};
+  key <B17> {[ KP_Subtract ]};
+  key <B16> {[ KP_Multiply ]};
+  key <B15> {[ KP_Divide   ]};
+  key <E17> {[ KP_Enter    ]};
+
+  key <F11> { type = "KEYPAD" , [  KP_Insert , KP_0       ]};
+  key <E14> { type = "KEYPAD" , [  KP_End    , KP_1       ]};
+  key <E15> { type = "KEYPAD" , [  KP_Down   , KP_2       ]};
+  key <E16> { type = "KEYPAD" , [  KP_Next   , KP_3       ]};
+  key <D14> { type = "KEYPAD" , [  KP_Left   , KP_4       ]};
+  key <D15> { type = "KEYPAD" , [  no_symbol , KP_5       ]};
+  key <D16> { type = "KEYPAD" , [  KP_Right  , KP_6       ]};
+  key <C14> { type = "KEYPAD" , [  KP_Home   , KP_7       ]};
+  key <C15> { type = "KEYPAD" , [  KP_Up     , KP_8       ]};
+  key <C16> { type = "KEYPAD" , [  KP_Prior  , KP_9       ]};
+  key <F12> { type = "KEYPAD" , [  KP_Delete , KP_Decimal ]};
+};

@@ -1,0 +1,183 @@
+[general]
+working_directory = '/home/jodufour'
+
+[window]
+                  padding = { x = 5, y = 4 }
+              decorations = 'None'
+                  opacity = 1.00
+decorations_theme_variant = 'Dark'
+
+[font]
+     normal = { family = 'Monaspice Kr NerdFont Mono', style = 'Regular'     }
+       bold = { family = 'Monaspice Kr NerdFont Mono', style = 'Bold'        }
+     italic = { family = 'Monaspice Kr NerdFont Mono', style = 'Italic'      }
+bold_italic = { family = 'Monaspice Kr NerdFont Mono', style = 'Bold Italic' }
+       size = 10
+
+[colors]
+    transparent_background_colors = true
+draw_bold_text_with_bright_colors = false
+
+[colors.primary]
+foreground = '#FFAA00'
+background = '#000000'
+
+[colors.cursor]
+  text = '#000000'
+cursor = '#FFAA00'
+
+[colors.selection]
+      text = '#000000'
+background = '#0082E5'
+
+[colors.normal]
+  black = '#000000'
+    red = '#990000'
+  green = '#009900'
+ yellow = '#999900'
+   blue = '#0000A9'
+magenta = '#B200A2'
+   cyan = '#00A6B2'
+  white = '#BFBFBF'
+
+[colors.bright]
+  black = '#666666'
+    red = '#E50000'
+  green = '#00D900'
+ yellow = '#E5E500'
+   blue = '#0000FF'
+magenta = '#EF00E5'
+   cyan = '#00E5E5'
+  white = '#FFFFFF'
+
+[selection]
+save_to_clipboard = true
+
+[cursor]
+blink_interval = 500
+ blink_timeout = 0
+
+[cursor.style]
+blinking = 'Always'
+
+[terminal]
+osc52 = 'Disabled'
+
+[mouse]
+hide_when_typing = true
+bindings = [
+           # Remove unwanted default bindings
+           { mouse = 'Right'                    , action = 'None' },
+           { mouse = 'Right' , mods = 'Control' , action = 'None' },
+           ]
+
+[keyboard]
+bindings = [
+           # Remove unwanted default bindings (Linux)
+           { key = 'Escape'                                , mode = '      Search    ', action = 'None' }, # SearchCancel
+           { key = 'Escape'                                , mode = '     ~Search| Vi', action = 'None' }, # ClearSelection
+           { key = 'Insert'    , mods = '            Shift'                           , action = 'None' }, # Paste Selection
+           { key = 'Copy'                                                             , action = 'None' }, # Copy
+           { key = 'Copy'                                  , mode = '     ~Search| Vi', action = 'None' }, # ClearSelection
+           { key = 'Paste'                                                            , action = 'None' }, # Paste
+           { key = 'Paste'                                 , mode = '      Search| Vi', action = 'None' }, # Paste
+           { key = 'PageUp'    , mods = '            Shift', mode = '~Alt            ', action = 'None' }, # ScrollPageUp
+           { key = 'PageDown'  , mods = '            Shift', mode = '~Alt            ', action = 'None' }, # ScrollPageDown
+           { key = 'Home'                                  , mode = '     ~Search| Vi', action = 'None' }, # First
+           { key = 'Home'      , mods = '            Shift', mode = '~Alt            ', action = 'None' }, # ScrollToTop
+           { key = 'End'                                   , mode = '     ~Search| Vi', action = 'None' }, # Last
+           { key = 'End'       , mods = '            Shift', mode = '~Alt            ', action = 'None' }, # ScrollToBottom
+           { key = 'ArrowUp'                               , mode = '      Search    ', action = 'None' }, # SearchHistoryPrevious
+           { key = 'ArrowUp'                               , mode = '     ~Search| Vi', action = 'None' }, # Up
+           { key = 'ArrowDown'                             , mode = '      Search    ', action = 'None' }, # SearchHistoryNext
+           { key = 'ArrowDown'                             , mode = '     ~Search| Vi', action = 'None' }, # Down
+           { key = 'ArrowLeft'                             , mode = '     ~Search| Vi', action = 'None' }, # Left
+           { key = 'ArrowRight'                            , mode = '     ~Search| Vi', action = 'None' }, # Right
+           { key = 'Enter'                                 , mode = '      Search| Vi', action = 'None' }, # SearchConfirm
+           { key = 'Enter'                                 , mode = '      Search|~Vi', action = 'None' }, # SearchFocusNext
+           { key = 'Enter'                                 , mode = '     ~Search| Vi', action = 'None' }, # Open
+           { key = 'Space'     , mods = 'Control    |Shift', mode = '     ~Search    ', action = 'None' }, # ToggleViMode
+           { key = 'Space'     , mods = 'Control    |Shift', mode = '     ~Search| Vi', action = 'None' }, # ScrollToBottom
+           { key = 'B'                                     , mode = '     ~Search| Vi', action = 'None' }, # SemanticLeft
+           { key = 'B'         , mods = 'Control          ', mode = '     ~Search| Vi', action = 'None' }, # ScrollPageUp
+           { key = 'B'         , mods = '            Shift', mode = '     ~Search| Vi', action = 'None' }, # WordLeft
+           { key = 'B'         , mods = 'Control    |Shift', mode = '     ~Search    ', action = 'None' }, # SearchBackward
+           { key = 'C'         , mods = 'Control          ', mode = '      Search    ', action = 'None' }, # SearchCancel
+           { key = 'C'         , mods = 'Control          ', mode = '     ~Search| Vi', action = 'None' }, # ToggleViMode
+           { key = 'C'         , mods = 'Control    |Shift'                           , action = 'None' }, # Copy
+           { key = 'C'         , mods = 'Control    |Shift', mode = '     ~Search| Vi', action = 'None' }, # ClearSelection
+           { key = 'D'         , mods = 'Control          ', mode = '     ~Search| Vi', action = 'None' }, # ScrollHalfPageDown
+           { key = 'E'                                     , mode = '     ~Search| Vi', action = 'None' }, # SemanticRightEnd
+           { key = 'E'         , mods = 'Control          ', mode = '     ~Search| Vi', action = 'None' }, # ScrollLineDown
+           { key = 'E'         , mods = '            Shift', mode = '     ~Search| Vi', action = 'None' }, # WordRightEnd
+           { key = 'F'                                     , mode = '     ~Search| Vi', action = 'None' }, # InlineSearchForward
+           { key = 'F'         , mods = 'Control          ', mode = '     ~Search| Vi', action = 'None' }, # ScrollPageDown
+           { key = 'F'         , mods = '            Shift', mode = '     ~Search| Vi', action = 'None' }, # InlineSearchBackward
+           { key = 'F'         , mods = 'Control    |Shift', mode = '     ~Search    ', action = 'None' }, # SearchForward
+           { key = 'G'                                     , mode = '     ~Search| Vi', action = 'None' }, # ScrollToTop
+           { key = 'G'         , mods = '            Shift', mode = '     ~Search| Vi', action = 'None' }, # ScrollToBottom
+           { key = 'H'                                     , mode = '     ~Search| Vi', action = 'None' }, # Left
+           { key = 'H'         , mods = '            Shift', mode = '     ~Search| Vi', action = 'None' }, # High
+           { key = 'I'                                     , mode = '     ~Search| Vi', action = 'None' }, # ToggleViMode > ScrollToBottom
+           { key = 'J'                                     , mode = '     ~Search| Vi', action = 'None' }, # Down
+           { key = 'K'                                     , mode = '     ~Search| Vi', action = 'None' }, # Up
+           { key = 'L'                                     , mode = '     ~Search| Vi', action = 'None' }, # Right
+           { key = 'L'         , mods = 'Control          '                           , action = 'None' }, # ClearLogNotice
+           { key = 'L'         , mods = 'Control          ', mode = '     ~Search|~Vi', action = 'None' }, # chars: '\u000c'
+           { key = 'L'         , mods = '            Shift', mode = '     ~Search| Vi', action = 'None' }, # Low
+           { key = 'M'         , mods = '            Shift', mode = '     ~Search| Vi', action = 'None' }, # Middle
+           { key = 'N'                                     , mode = '     ~Search| Vi', action = 'None' }, # SearchNext
+           { key = 'N'         , mods = 'Control          ', mode = '      Search    ', action = 'None' }, # SearchHistoryNext
+           { key = 'N'         , mods = '            Shift', mode = '     ~Search| Vi', action = 'None' }, # SearchPrevious
+           { key = 'P'         , mods = 'Control          ', mode = '      Search    ', action = 'None' }, # SearchHistoryPrevious
+           { key = 'T'                                     , mode = '     ~Search| Vi', action = 'None' }, # InlineSearchForwardShort
+           { key = 'T'         , mods = '            Shift', mode = '     ~Search| Vi', action = 'None' }, # InlineSearchBackwardShort
+           { key = 'U'         , mods = 'Control          ', mode = '      Search    ', action = 'None' }, # SearchClear
+           { key = 'U'         , mods = 'Control          ', mode = '     ~Search| Vi', action = 'None' }, # ScrollHalfPageUp
+           { key = 'V'                                     , mode = '     ~Search| Vi', action = 'None' }, # ToggleNormalSelection
+           { key = 'V'         , mods = 'Control          ', mode = '     ~Search| Vi', action = 'None' }, # ToggleBlockSelection
+           { key = 'V'         , mods = '        Alt      ', mode = '     ~Search| Vi', action = 'None' }, # ToggleSemanticSelection
+           { key = 'V'         , mods = 'Control    |Shift', mode = '             ~Vi', action = 'None' }, # Paste
+           { key = 'V'         , mods = 'Control    |Shift', mode = '      Search| Vi', action = 'None' }, # Paste
+           { key = 'V'         , mods = '            Shift', mode = '     ~Search| Vi', action = 'None' }, # ToggleLineSelection
+           { key = 'W'                                     , mode = '     ~Search| Vi', action = 'None' }, # SemanticRight
+           { key = 'W'         , mods = 'Control          ', mode = '      Search    ', action = 'None' }, # SearchDeleteWord
+           { key = 'W'         , mods = '            Shift', mode = '     ~Search| Vi', action = 'None' }, # WordRight
+           { key = 'Y'                                     , mode = '     ~Search| Vi', action = 'None' }, # Copy + ClearSelection
+           { key = 'Y'         , mods = 'Control          ', mode = '     ~Search| Vi', action = 'None' }, # ScrollLineUp
+           { key = 'Y'         , mods = '            Shift', mode = '     ~Search| Vi', action = 'None' }, # ToggleNormalSelection > Last > Copy > ClearSelection
+           { key = 'Z'                                     , mode = '     ~Search| Vi', action = 'None' }, # CenterAroundViCursor
+           { key = '#'         , mods = '            Shift', mode = '     ~Search| Vi', action = 'None' }, # SemanticSearchBackward
+           { key = '$'         , mods = '            Shift', mode = '     ~Search| Vi', action = 'None' }, # Last
+           { key = '^'         , mods = '            Shift', mode = '     ~Search| Vi', action = 'None' }, # FirstOccupied
+           { key = '%'         , mods = '            Shift', mode = '     ~Search| Vi', action = 'None' }, # Bracket
+           { key = '*'         , mods = '            Shift', mode = '     ~Search| Vi', action = 'None' }, # SemanticSearchForward
+           { key = '0'                                     , mode = '     ~Search| Vi', action = 'None' }, # First
+           { key = '{'         , mods = '            Shift', mode = '     ~Search| Vi', action = 'None' }, # ParagraphUp
+           { key = '}'         , mods = '            Shift', mode = '     ~Search| Vi', action = 'None' }, # ParagraphDown
+           { key = ';'                                     , mode = '     ~Search| Vi', action = 'None' }, # InlineSearchNext
+           { key = ','                                     , mode = '     ~Search| Vi', action = 'None' }, # InlineSearchPrevious
+           { key = '/'                                     , mode = '     ~Search| Vi', action = 'None' }, # SearchForward
+           { key = '?'         , mods = '            Shift', mode = '     ~Search| Vi', action = 'None' }, # SearchBackward
+
+           # Define custom bindings
+           { key = 'F4'        , mods = '        Alt      '                           , action = 'Quit'              },
+           { key = 'F11'                                                              , action = 'ToggleFullscreen'  },
+#          { key = 'ArrowLeft' , mods = '        Alt      '                           , action = 'SelectPreviousTab' },
+#          { key = 'ArrowRight', mods = '        Alt      '                           , action = 'SelectNextTab'     },
+           { key = 'C'         , mods = '        Alt      '                           , action = 'Copy'              },
+           { key = 'L'         , mods = '        Alt      '                           , action = 'ClearLogNotice'    },
+           { key = 'N'         , mods = '        Alt      '                           , action = 'CreateNewWindow'   },
+           { key = 'Q'         , mods = '        Alt      '                           , action = 'Quit'              },
+#          { key = 'T'         , mods = '        Alt      '                           , action = 'CreateNewTab'      },
+           { key = 'V'         , mods = '        Alt      '                           , action = 'Paste'             },
+#          { key = '1'         , mods = '        Alt      '                           , action = 'SelectTab1'        },
+#          { key = '2'         , mods = '        Alt      '                           , action = 'SelectTab2'        },
+#          { key = '3'         , mods = '        Alt      '                           , action = 'SelectTab3'        },
+#          { key = '4'         , mods = '        Alt      '                           , action = 'SelectTab4'        },
+#          { key = '5'         , mods = '        Alt      '                           , action = 'SelectTab5'        },
+#          { key = '6'         , mods = '        Alt      '                           , action = 'SelectTab6'        },
+#          { key = '7'         , mods = '        Alt      '                           , action = 'SelectTab7'        },
+#          { key = '8'         , mods = '        Alt      '                           , action = 'SelectTab8'        },
+#          { key = '9'         , mods = '        Alt      '                           , action = 'SelectTab9'        },
+           ]

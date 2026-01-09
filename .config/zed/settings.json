@@ -10,154 +10,155 @@
   "agent": {
     "inline_assistant_model": {
       "provider": "copilot_chat",
-      "model": "gpt-5-mini"
+      "model": "gpt-5-mini",
     },
-    "model_parameters": []
+    "model_parameters": [],
   },
+  "auto_indent": false,
   "auto_install_extensions": {},
   "auto_signature_help": true,
+  "base_keymap": "None",
   "buffer_font_family": "JetBrainsMono Nerd Font Mono",
   "buffer_line_height": "standard",
-  "buffer_font_size": 12,
+  "buffer_font_size": 16,
   "buffer_font_weight": 142,
   "close_on_file_delete": true,
   "collaboration_panel": {
-    "button": false
+    "button": true,
   },
   "completions": {
-    "lsp_insert_mode": "replace_subsequence"
+    "lsp_insert_mode": "replace_subsequence",
   },
   "debugger": {
-    "button": false
+    "button": false,
   },
   "drag_and_drop_selection": {
-    "enabled": false
+    "enabled": false,
   },
   "features": {
-    "edit_prediction_provider": "copilot"
+    "edit_prediction_provider": "copilot",
   },
   "file_scan_exclusions": [],
   "file_types": {
-    "asm-intel-x86-generic": ["*.s", "*.nasm"],
+    "asm-intel-x86-generic": ["*.s", "*.asm", "*.nasm"],
     "C": ["*.c", "*.h"],
-    "C++": ["*.cc", "*.hh", "*.cpp", "*.hpp", "*.tpp", "*.cxx", "*.hxx", "*.txx"]
+    "C++": ["*.cc", "*.hh", "*.cpp", "*.hpp", "*.tpp", "*.cxx", "*.hxx", "*.txx"],
   },
-  "format_on_save": "on",
+  "format_on_save": "off",
   "git": {
     "inline_blame": {
-      "enabled": false
-    }
+      "enabled": false,
+    },
   },
   "git_panel": {
-    "button": false
+    "button": false,
   },
   "global_lsp_settings": {
-    "button": false
+    "button": false,
   },
   "indent_guides": {
-    "enabled": false
+    "enabled": false,
   },
   "journal": {
-    "hour_format": "hour24"
+    "hour_format": "hour24",
   },
   "languages": {
     "Rust": {
-      "tab_size": 4
+      "tab_size": 4,
     },
     "C": {
-      "tab_size": 4
+      "tab_size": 4,
     },
     "C++": {
-      "tab_size": 4
+      "tab_size": 4,
     },
-    // "JSONC": {
-    //   "format_on_save": "off"
-    // },
+    "JSONC": {
+      "format_on_save": "off"
+    },
     "Make": {
-      "hard_tabs": true
+      "hard_tabs": true,
     },
     "Markdown": {
       "format_on_save": "off",
-      "remove_trailing_whitespace_on_save": false
-    }
+      "remove_trailing_whitespace_on_save": false,
+    },
   },
   "line_indicator_format": "long",
   "lsp": {
     "clangd": {
       "binary": {
-        "arguments": ["--clang-tidy"]
-      }
+        "arguments": ["--clang-tidy"],
+      },
     },
     "rust-analyzer": {
       "initialization_options": {
         "check": {
-          "command": "clippy"
-        }
-      }
-    }
+          "command": "clippy",
+        },
+      },
+    },
   },
   "middle_click_paste": false,
   "minimap": {
     "show": "always",
-    "thumb_border": "none"
+    "thumb_border": "none",
   },
   "outline_panel": {
-    "button": false
+    "button": false,
   },
   "preferred_line_length": 100,
   "private_files": [],
   "project_panel": {
     "auto_fold_dirs": false,
     "button": false,
+    "dock": "right",
     "drag_and_drop": false,
-    "entry_spacing": "standard"
+    "entry_spacing": "standard",
   },
   "relative_line_numbers": "enabled",
   "rounded_selection": false,
-  "scroll_beyond_last_line": "vertical_scroll_margin",
   "search": {
     "case_sensitive": true,
-    "regex": true
+    "regex": true,
   },
   "show_call_status_icon": false,
   "show_whitespaces": "boundary",
   "snippet_sort_order": "top",
   "tab_bar": {
     "show_nav_history_buttons": false,
-    "show_tab_bar_buttons": false
+    "show_tab_bar_buttons": false,
   },
   "tab_size": 2,
   "tabs": {
     "git_status": true,
     "activate_on_close": "neighbour",
-    "show_close_button": "hidden"
+    "show_close_button": "hidden",
   },
   "tasks": {
-    "enabled": false
+    "enabled": false,
   },
   "terminal": {
-    "button": false
+    "button": false,
   },
   "theme": {
     "mode": "dark",
     "light": "Gruvbox Light Hard",
-    "dark": "Gruvbox Dark Hard"
+    "dark": "Gruvbox Dark Hard",
   },
   "title_bar": {
     "show_branch_icon": true,
     "show_project_items": false,
-    "show_onboarding_banner": false
+    "show_onboarding_banner": false,
   },
   "toolbar": {
     "agent_review": false,
     "quick_actions": false,
-    "selections_menu": false
+    "selections_menu": false,
   },
   "ui_font_family": "JetBrainsMono Nerd Font Mono",
-  // "ui_font_family": "Monocraft",
-  "ui_font_size": 14,
+  "ui_font_size": 16,
   "ui_font_weight": 200,
-  "vertical_scroll_margin": 42,
+  "horizontal_scroll_margin": 21,
   "when_closing_with_no_tabs": "keep_window_open",
-  "wrap_guides": [100]
+  "wrap_guides": [100],
 }
