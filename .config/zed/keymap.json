@@ -263,6 +263,12 @@
     },
   },
   {
+    "context": "ProjectPanel",
+    "bindings": {
+      " Alt-e ": null,
+    },
+  },
+  {
     "context": "( ProjectPanel && menu && editing > Editor && mode == single_line ) || menu",
     "bindings": {
       " Escape ": "menu::Cancel",
