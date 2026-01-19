@@ -2,12 +2,14 @@
 working_directory = '/home/jodufour'
 
 [window]
-                  padding = { x = 5, y = 4 }
+                  padding = { x = 5, y = 5 }
               decorations = 'None'
-                  opacity = 1.00
+                  opacity = 1
+#                  opacity = 0.85
 decorations_theme_variant = 'Dark'
 
 [font]
+#     normal = { family = 'JetBrainsMono NerdFont Mono', style = 'Regular'    }
      normal = { family = 'Monaspice Kr NerdFont Mono', style = 'Regular'     }
        bold = { family = 'Monaspice Kr NerdFont Mono', style = 'Bold'        }
      italic = { family = 'Monaspice Kr NerdFont Mono', style = 'Italic'      }
@@ -19,12 +21,12 @@ bold_italic = { family = 'Monaspice Kr NerdFont Mono', style = 'Bold Italic' }
 draw_bold_text_with_bright_colors = false
 
 [colors.primary]
-foreground = '#FFAA00'
+foreground = '#FFD200'
 background = '#000000'
 
 [colors.cursor]
   text = '#000000'
-cursor = '#FFAA00'
+cursor = '#FFD200'
 
 [colors.selection]
       text = '#000000'

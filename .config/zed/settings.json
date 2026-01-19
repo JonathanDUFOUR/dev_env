@@ -7,13 +7,6 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
-  "agent": {
-    "inline_assistant_model": {
-      "provider": "copilot_chat",
-      "model": "gpt-5-mini",
-    },
-    "model_parameters": [],
-  },
   "auto_indent": false,
   "auto_install_extensions": {},
   "auto_signature_help": true,
@@ -42,9 +35,18 @@
   "file_types": {
     "asm-intel-x86-generic": ["*.s", "*.asm", "*.nasm"],
     "C": ["*.c", "*.h"],
-    "C++": ["*.cc", "*.hh", "*.cpp", "*.hpp", "*.tpp", "*.cxx", "*.hxx", "*.txx"],
+    "C++": [
+      "*.cc",
+      "*.hh",
+      "*.cpp",
+      "*.hpp",
+      "*.tpp",
+      "*.cxx",
+      "*.hxx",
+      "*.txx",
+    ],
   },
-  "format_on_save": "off",
+  "format_on_save": "on",
   "git": {
     "inline_blame": {
       "enabled": false,
@@ -73,7 +75,7 @@
       "tab_size": 4,
     },
     "JSONC": {
-      "format_on_save": "off"
+      "format_on_save": "off",
     },
     "Make": {
       "hard_tabs": true,
@@ -111,6 +113,7 @@
   "project_panel": {
     "auto_fold_dirs": false,
     "button": false,
+    "default_width": 700,
     "dock": "right",
     "drag_and_drop": false,
     "entry_spacing": "standard",

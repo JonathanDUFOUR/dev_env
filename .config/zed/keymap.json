@@ -179,7 +179,7 @@
     },
   },
   {
-    "context": "edit_prediction",
+    "context": "edit_prediction || edit_prediction_conflict",
     "bindings": {
       " Tab ": "editor::AcceptEditPrediction",
     },

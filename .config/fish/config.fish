@@ -168,8 +168,8 @@ if status is-interactive
   set -gx -- fish_color_hg_unmerged     'red'
   set -gx -- fish_color_hg_untracked    'yellow'
   set -gx -- fish_color_history_current '--bold normal'
-  set -gx -- fish_color_host            'FFAA00'
-  set -gx -- fish_color_host_remote     'FFAA00'
+  set -gx -- fish_color_host            'normal'
+  set -gx -- fish_color_host_remote     'normal'
   set -gx -- fish_color_keyword         '--bold FF5000'
   set -gx -- fish_color_normal          'normal'
   set -gx -- fish_color_operator        '00A6B2'
@@ -182,4 +182,7 @@ if status is-interactive
   set -gx -- fish_color_status          'red'
   set -gx -- fish_color_user            'FF4200'
   set -gx -- fish_color_valid_path      '--bold brcyan'
+
+  set -gx -- CC  ( which clang   )
+  set -gx -- CXX ( which clang++ )
 end
