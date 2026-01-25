@@ -180,7 +180,7 @@ if status is-interactive
   set -gx -- fish_color_search_match    '--background=brblack bryellow'
   set -gx -- fish_color_selection       '--background=brblack --bold white'
   set -gx -- fish_color_status          'red'
-  set -gx -- fish_color_user            'FF4200'
+  set -gx -- fish_color_user            'FF6211'
   set -gx -- fish_color_valid_path      '--bold brcyan'
 
   set -gx -- CC  ( which clang   )
