@@ -1,0 +1,5 @@
+// https://yalter.github.io/niri/Configuration:-Recent-Windows
+//
+recent-windows {
+  off
+}

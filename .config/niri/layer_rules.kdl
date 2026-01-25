@@ -1,0 +1,11 @@
+// https://yalter.github.io/niri/Configuration:-Layer-Rules
+//
+layer-rule {
+  match namespace="^awww-daemon$"
+  place-within-backdrop true
+}
+layer-rule {
+  match namespace="^launcher$"
+  opacity 0.83
+  baba-is-float true
+}

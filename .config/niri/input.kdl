@@ -1,0 +1,25 @@
+// https://yalter.github.io/niri/Configuration:-Input
+//
+input {
+  keyboard {
+    xkb {
+      file "~/.config/xkb/acer_predator_helios_300.xkb"
+    }
+    numlock
+    repeat-delay 342
+    repeat-rate 42
+  }
+  touchpad {
+    natural-scroll
+    accel-speed 0.42
+    scroll-method "two-finger"
+    tap
+    dwt // Disable When Typing
+    drag true
+    drag-lock
+    tap-button-map "left-right-middle"
+    click-method "clickfinger"
+  }
+  disable-power-key-handling
+  warp-mouse-to-focus mode="center-xy"
+}

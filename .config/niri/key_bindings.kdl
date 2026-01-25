@@ -1,0 +1,72 @@
+// https://yalter.github.io/niri/Configuration:-Key-Bindings
+//
+binds {
+  // Keys consist of modifiers separated by + signs, followed by an XKB key name in the end.
+  // To find an XKB name for a particular key, you may use a program like `wev`.
+
+  Super+F1               repeat=false hotkey-overlay-title="Show the hotkey overlay"       { show-hotkey-overlay                   ;}
+  Super+Tab              repeat=false hotkey-overlay-title="Toggle global navigation"      { toggle-overview                       ;}
+  Super+Up               repeat=false hotkey-overlay-title="Focus window/workspace up"     { focus-window-or-workspace-up          ;}
+  Super+Down             repeat=false hotkey-overlay-title="Focus window/workspace down"   { focus-window-or-workspace-down        ;}
+  Super+Left             repeat=false hotkey-overlay-title="Focus window left"             { focus-column-left                     ;}
+  Super+Right            repeat=false hotkey-overlay-title="Focus window right"            { focus-column-right                    ;}
+  Super+Shift+Up         repeat=false hotkey-overlay-title="Focus monitor up"              { focus-monitor-up                      ;}
+  Super+Shift+Down       repeat=false hotkey-overlay-title="Focus monitor down"            { focus-monitor-down                    ;}
+  Super+Shift+Left       repeat=false hotkey-overlay-title="Focus monitor left"            { focus-monitor-left                    ;}
+  Super+Shift+Right      repeat=false hotkey-overlay-title="Focus monitor right"           { focus-monitor-right                   ;}
+  Super+Ctrl+Up          repeat=false hotkey-overlay-title="Move window up"                { move-window-up-or-to-workspace-up     ;}
+  Super+Ctrl+Down        repeat=false hotkey-overlay-title="Move window down"              { move-window-down-or-to-workspace-down ;}
+  Super+Ctrl+Left        repeat=false hotkey-overlay-title="Move column left"              { move-column-left                      ;}
+  Super+Ctrl+Right       repeat=false hotkey-overlay-title="Move column right"             { move-column-right                     ;}
+  Super+Ctrl+Shift+Up    repeat=false hotkey-overlay-title="Move window to monitor up"     { move-window-to-monitor-up             ;}
+  Super+Ctrl+Shift+Down  repeat=false hotkey-overlay-title="Move window to monitor down"   { move-window-to-monitor-down           ;}
+  Super+Ctrl+Shift+Left  repeat=false hotkey-overlay-title="Move window to monitor left"   { move-window-to-monitor-left           ;}
+  Super+Ctrl+Shift+Right repeat=false hotkey-overlay-title="Move window to monitor right"  { move-window-to-monitor-right          ;}
+  Super+BracketLeft      repeat=false hotkey-overlay-title="Consume or expel window left"  { consume-or-expel-window-left          ;}
+  Super+BracketRight     repeat=false hotkey-overlay-title="Consume or expel window right" { consume-or-expel-window-right         ;}
+  Super+1                repeat=false hotkey-overlay-title="Increase column width"         { switch-preset-column-width-back       ;}
+  Super+2                repeat=false hotkey-overlay-title="Decrease column width"         { switch-preset-column-width            ;}
+  Super+Shift+1          repeat=false hotkey-overlay-title="Increase window height"        { switch-preset-window-height-back      ;}
+  Super+Shift+2          repeat=false hotkey-overlay-title="Decrease window height"        { switch-preset-window-height           ;}
+  Super+F                repeat=false hotkey-overlay-title="Maximize column width"         { maximize-column                       ;}
+  Super+R                repeat=false hotkey-overlay-title="Maximize window height"        { reset-window-height                   ;}
+  Super+A                repeat=false hotkey-overlay-title="Maximize window area"          { maximize-window-to-edges              ;}
+  F11                    repeat=false hotkey-overlay-title="Toggle window fullscreen"      { fullscreen-window                     ;}
+  Super+Q                repeat=false hotkey-overlay-title="Quit/Close current window"     { close-window                          ;}
+  Print                  repeat=false hotkey-overlay-title="Screenshot entire screen"      { screenshot-screen                     ;}
+  Super+Print            repeat=false hotkey-overlay-title="Screenshot focues window"      { screenshot-window                     ;}
+  Super+Shift+S          repeat=false hotkey-overlay-title="Screenshot rectangular area"   { screenshot                            ;}
+  Super+X                repeat=false hotkey-overlay-title="Exit Niri"                     { quit                                  ;}
+  Super+Return           repeat=false hotkey-overlay-title="Center focused column"         { center-column                         ;}
+  Super+O                repeat=false hotkey-overlay-title="Toggle window opacity"         { toggle-window-rule-opacity            ;}
+
+  Super+C     repeat=false hotkey-overlay-title="Code editor: zeditor"    allow-when-locked=false { spawn "zeditor"   ;}
+  Super+D     repeat=false hotkey-overlay-title="Discord client: equibop" allow-when-locked=false { spawn "equibop"   ;}
+  Super+E     repeat=false hotkey-overlay-title="App launcher: fuzzel"    allow-when-locked=false { spawn "fuzzel"    ;}
+  Super+L     repeat=false hotkey-overlay-title="Screen locker: swaylock" allow-when-locked=false { spawn "swaylock"  ;}
+  Super+W     repeat=false hotkey-overlay-title="Web browser: brave"      allow-when-locked=false { spawn "brave"     ;}
+  Super+Grave repeat=false hotkey-overlay-title="Terminal: alacritty"     allow-when-locked=false { spawn "alacritty" ;}
+
+  XF86MonBrightnessUp   repeat=true  allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "10%+" ;}
+  XF86MonBrightnessDown repeat=true  allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "10%-" ;}
+
+  XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1+ -l 1.0" ;}
+  XF86AudioLowerVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1-"        ;}
+  XF86AudioMute        allow-when-locked=true { spawn-sh "wpctl set-mute   @DEFAULT_AUDIO_SINK@ toggle"      ;}
+
+  XF86AudioPlay allow-when-locked=true { spawn-sh "playerctl play-pause" ;}
+  XF86AudioStop allow-when-locked=true { spawn-sh "playerctl stop"       ;}
+  XF86AudioPrev allow-when-locked=true { spawn-sh "playerctl previous"   ;}
+  XF86AudioNext allow-when-locked=true { spawn-sh "playerctl next"       ;}
+
+
+  // Applications such as remote-desktop clients and software KVM switches may
+  // request that niri stops processing the keyboard shortcuts defined here
+  // so they may, for example, forward the key presses as-is to a remote machine.
+  // It's a good idea to bind an escape hatch to toggle the inhibitor,
+  // so a buggy application can't hold your session hostage.
+  //
+  // The allow-inhibiting=false property can be applied to other binds as well,
+  // which ensures niri always processes them, even when an inhibitor is active.
+  Super+Escape allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
+}

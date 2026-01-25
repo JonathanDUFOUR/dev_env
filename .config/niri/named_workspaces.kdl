@@ -1,0 +1,12 @@
+// https://yalter.github.io/niri/Configuration:-Named-Workspaces
+//
+// The declaration order is important!
+// First declared -> Most at the bottom
+//  Last declared -> Most at the top
+//
+workspace "terminals" {
+  open-on-output "eDP-1"
+}
+workspace "applications" {
+  open-on-output "eDP-1"
+}

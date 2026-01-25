@@ -1,0 +1,8 @@
+// https://yalter.github.io/niri/Configuration:-Miscellaneous#overview
+//
+overview {
+  zoom 0.42
+  workspace-shadow {
+    off
+  }
+}

@@ -1,0 +1,6 @@
+// https://yalter.github.io/niri/Configuration:-Animations
+//
+animations {
+  // TODO: dig more the `custom-shader` possibilites
+  // TODO: maybe change the overview open-close animation settings (?)
+}

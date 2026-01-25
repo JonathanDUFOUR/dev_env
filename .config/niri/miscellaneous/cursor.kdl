@@ -1,0 +1,8 @@
+// https://yalter.github.io/niri/Configuration:-Miscellaneous#cursor
+//
+cursor {
+  // xcursor-theme "breeze_cursors"
+  xcursor-size 21
+  hide-when-typing
+  hide-after-inactive-ms 4242
+}

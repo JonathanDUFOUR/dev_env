@@ -1,0 +1,6 @@
+// https://yalter.github.io/niri/Configuration:-Miscellaneous#hotkey-overlay
+//
+hotkey-overlay {
+    skip-at-startup
+    hide-not-bound
+}

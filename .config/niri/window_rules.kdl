@@ -1,0 +1,41 @@
+// https://yalter.github.io/niri/Configuration:-Window-Rules
+//
+window-rule {
+  draw-border-with-background false
+  open-on-workspace "applications"
+  open-focused true
+  geometry-corner-radius 10
+  clip-to-geometry true
+}
+window-rule {
+  match app-id="Alacritty"
+  open-on-workspace "terminals"
+  opacity 0.85
+}
+window-rule {
+  match app-id="brave-browser"
+  open-maximized-to-edges true
+  opacity 0.95
+}
+window-rule {
+  match app-id="Fuzzel"
+  opacity 0.8
+}
+window-rule {
+  match app-id="KeePassXC"
+  block-out-from "screen-capture"
+  opacity 0.96
+}
+window-rule {
+  match app-id="KeePassXC" title="^Generate Password$"
+  open-floating true
+}
+window-rule {
+  match app-id="Zed"
+  open-maximized-to-edges true
+  opacity 0.93
+}
+window-rule {
+  match app-id="^equibop$"
+  opacity 0.92
+}

@@ -1,0 +1,31 @@
+// https://yalter.github.io/niri/Configuration:-Layout
+//
+layout {
+  gaps 16 // pixels
+  always-center-single-column
+  preset-column-widths {
+    proportion 0.3
+    proportion 0.4
+    proportion 0.5
+    proportion 0.6
+    proportion 0.7
+  }
+  preset-window-heights {
+    proportion 0.3
+    proportion 0.5
+    proportion 0.7
+  }
+  default-column-width {
+    proportion 0.5
+  }
+  focus-ring {
+    width 10 // pixels
+    active-gradient   from="#FFE021" to="#FF1211" angle=135
+    // active-gradient   from="#FF13AD" to="#147DFF" angle=135
+    inactive-gradient from="#505050" to="#808080" angle=135 relative-to="workspace-view"
+  }
+  insert-hint {
+    gradient from="#FFE021" to="#FF1211" angle=135
+  }
+  background-color "transparent"
+}
