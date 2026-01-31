@@ -18,6 +18,11 @@ window-rule {
   opacity 0.95
 }
 window-rule {
+  match app-id="^equibop$" title="Discord"
+  open-maximized-to-edges true
+  opacity 0.92
+}
+window-rule {
   match app-id="Fuzzel"
   opacity 0.8
 }
@@ -34,8 +39,4 @@ window-rule {
   match app-id="Zed"
   open-maximized-to-edges true
   opacity 0.93
-}
-window-rule {
-  match app-id="^equibop$"
-  opacity 0.92
 }

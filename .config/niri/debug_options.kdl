@@ -1,0 +1,6 @@
+// https://yalter.github.io/niri/Configuration:-Debug-Options
+//
+debug {
+  // Activates the discrete (Nvidia) GPU by default
+//  render-drm-device "/dev/dri/renderD129"
+}

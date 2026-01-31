@@ -1,3 +1,5 @@
 function now
-    date +%H:%M:%S
+    echo
+    date '+%F   %T'
+    echo
 end

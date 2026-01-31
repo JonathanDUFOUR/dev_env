@@ -851,7 +851,7 @@
             "enabled": false
         },
         "NewPluginsManager": {
-            "enabled": true
+            "enabled": false
         },
         "NoAppsAllowed": {
             "enabled": false
@@ -1098,6 +1098,24 @@
         },
         "UserAreaAPI": {
             "enabled": false
+        },
+        "FavouriteAnything": {
+            "enabled": false
+        },
+        "FileUpload": {
+            "enabled": false
+        },
+        "NoTrack": {
+            "enabled": true,
+            "disableAnalytics": true
+        },
+        "EquicordHelper": {
+            "enabled": true,
+            "noMirroredCamera": false,
+            "removeActivitySection": false,
+            "showYourOwnActivityButtons": false,
+            "noDefaultHangStatus": false,
+            "forceRoleIcon": false
         }
     },
     "uiElements": {
@@ -1115,7 +1133,7 @@
         "authenticated": false,
         "url": "https://cloud.equicord.org/",
         "settingsSync": false,
-        "settingsSyncVersion": 1769343850743
+        "settingsSyncVersion": 1769593775869
     },
     "ignoreResetWarning": false,
     "userCssVars": {}

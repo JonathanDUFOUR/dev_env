@@ -10,14 +10,14 @@ binds {
   Super+Down             repeat=false hotkey-overlay-title="Focus window/workspace down"   { focus-window-or-workspace-down        ;}
   Super+Left             repeat=false hotkey-overlay-title="Focus window left"             { focus-column-left                     ;}
   Super+Right            repeat=false hotkey-overlay-title="Focus window right"            { focus-column-right                    ;}
-  Super+Shift+Up         repeat=false hotkey-overlay-title="Focus monitor up"              { focus-monitor-up                      ;}
-  Super+Shift+Down       repeat=false hotkey-overlay-title="Focus monitor down"            { focus-monitor-down                    ;}
-  Super+Shift+Left       repeat=false hotkey-overlay-title="Focus monitor left"            { focus-monitor-left                    ;}
-  Super+Shift+Right      repeat=false hotkey-overlay-title="Focus monitor right"           { focus-monitor-right                   ;}
-  Super+Ctrl+Up          repeat=false hotkey-overlay-title="Move window up"                { move-window-up-or-to-workspace-up     ;}
-  Super+Ctrl+Down        repeat=false hotkey-overlay-title="Move window down"              { move-window-down-or-to-workspace-down ;}
-  Super+Ctrl+Left        repeat=false hotkey-overlay-title="Move column left"              { move-column-left                      ;}
-  Super+Ctrl+Right       repeat=false hotkey-overlay-title="Move column right"             { move-column-right                     ;}
+  Super+Ctrl+Up          repeat=false hotkey-overlay-title="Focus monitor up"              { focus-monitor-up                      ;}
+  Super+Ctrl+Down        repeat=false hotkey-overlay-title="Focus monitor down"            { focus-monitor-down                    ;}
+  Super+Ctrl+Left        repeat=false hotkey-overlay-title="Focus monitor left"            { focus-monitor-left                    ;}
+  Super+Ctrl+Right       repeat=false hotkey-overlay-title="Focus monitor right"           { focus-monitor-right                   ;}
+  Super+Shift+Up         repeat=false hotkey-overlay-title="Move window up"                { move-window-up-or-to-workspace-up     ;}
+  Super+Shift+Down       repeat=false hotkey-overlay-title="Move window down"              { move-window-down-or-to-workspace-down ;}
+  Super+Shift+Left       repeat=false hotkey-overlay-title="Move column left"              { move-column-left                      ;}
+  Super+Shift+Right      repeat=false hotkey-overlay-title="Move column right"             { move-column-right                     ;}
   Super+Ctrl+Shift+Up    repeat=false hotkey-overlay-title="Move window to monitor up"     { move-window-to-monitor-up             ;}
   Super+Ctrl+Shift+Down  repeat=false hotkey-overlay-title="Move window to monitor down"   { move-window-to-monitor-down           ;}
   Super+Ctrl+Shift+Left  repeat=false hotkey-overlay-title="Move window to monitor left"   { move-window-to-monitor-left           ;}
