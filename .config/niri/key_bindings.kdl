@@ -47,6 +47,9 @@ binds {
   Super+W     repeat=false hotkey-overlay-title="Web browser: brave"      allow-when-locked=false { spawn "brave"     ;}
   Super+Grave repeat=false hotkey-overlay-title="Terminal: alacritty"     allow-when-locked=false { spawn "alacritty" ;}
 
+  Super+Shift+D     repeat=false hotkey-overlay-title="Discord client: equibop (using Nvidia GPU)" allow-when-locked=false { spawn "prime-run" "equibop" ;}
+  Super+Shift+W     repeat=false hotkey-overlay-title="Web browser: brave (using Nvidia GPU)"      allow-when-locked=false { spawn "prime-run" "brave"   ;}
+
   XF86MonBrightnessUp   repeat=true  allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "10%+" ;}
   XF86MonBrightnessDown repeat=true  allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "10%-" ;}
 

@@ -1,5 +1,5 @@
 // https://yalter.github.io/niri/Configuration:-Miscellaneous#xwayland-satellite
 //
-xwayland-satellite {
+/- xwayland-satellite {
   off
 }
