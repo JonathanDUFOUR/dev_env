@@ -14,7 +14,7 @@
   "buffer_font_family": "JetBrainsMono Nerd Font Mono",
   "buffer_line_height": "standard",
   "buffer_font_size": 16,
-  "buffer_font_weight": 142,
+  "buffer_font_weight": 424,
   "close_on_file_delete": true,
   "collaboration_panel": {
     "button": true,
@@ -28,8 +28,8 @@
   "drag_and_drop_selection": {
     "enabled": false,
   },
-  "features": {
-    "edit_prediction_provider": "copilot",
+  "file_finder": {
+    "file_icons": true
   },
   "file_scan_exclusions": [],
   "file_types": {
@@ -45,6 +45,7 @@
       "*.hxx",
       "*.txx",
     ],
+    "JSONC": ["*.json"],
   },
   "format_on_save": "on",
   "git": {
@@ -58,6 +59,7 @@
   "global_lsp_settings": {
     "button": false,
   },
+  "icon_theme": "Material Icon Theme",
   "indent_guides": {
     "enabled": false,
   },
@@ -144,9 +146,9 @@
     "button": false,
   },
   "theme": {
-    "mode": "dark",
-    "light": "Gruvbox Light Hard",
-    "dark": "Gruvbox Dark Hard",
+    "mode": "system",
+    "light": "Base16 Solarized Light",
+    "dark": "Base16 3024"
   },
   "title_bar": {
     "show_branch_icon": true,
