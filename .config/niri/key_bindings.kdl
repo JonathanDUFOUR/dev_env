@@ -41,14 +41,14 @@ binds {
   Super+O                repeat=false hotkey-overlay-title="Toggle window opacity"         { toggle-window-rule-opacity            ;}
 
   Super+C     repeat=false hotkey-overlay-title="Code editor: zeditor"    allow-when-locked=false { spawn "zeditor"   ;}
-  Super+D     repeat=false hotkey-overlay-title="Discord client: equibop" allow-when-locked=false { spawn "equibop"   ;}
+  Super+D     repeat=false hotkey-overlay-title="Discord client: vesktop" allow-when-locked=false { spawn "vesktop"   ;}
   Super+E     repeat=false hotkey-overlay-title="App launcher: fuzzel"    allow-when-locked=false { spawn "fuzzel"    ;}
   Super+L     repeat=false hotkey-overlay-title="Screen locker: swaylock" allow-when-locked=false { spawn "swaylock"  ;}
   Super+W     repeat=false hotkey-overlay-title="Web browser: brave"      allow-when-locked=false { spawn "brave"     ;}
   Super+Grave repeat=false hotkey-overlay-title="Terminal: alacritty"     allow-when-locked=false { spawn "alacritty" ;}
 
-  Super+Shift+D     repeat=false hotkey-overlay-title="Discord client: equibop (using Nvidia GPU)" allow-when-locked=false { spawn "prime-run" "equibop" ;}
-  Super+Shift+W     repeat=false hotkey-overlay-title="Web browser: brave (using Nvidia GPU)"      allow-when-locked=false { spawn "prime-run" "brave"   ;}
+  Super+Shift+D     repeat=false hotkey-overlay-title="Discord client: vesktop (using Nvidia GPU)" allow-when-locked=false { spawn "prime-run" "vesktop" "--ozone-platform=x11" ;}
+  Super+Shift+W     repeat=false hotkey-overlay-title="Web browser: brave (using Nvidia GPU)"      allow-when-locked=false { spawn "prime-run" "brave"   "--ozone-platform=x11" ;}
 
   XF86MonBrightnessUp   repeat=true  allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "10%+" ;}
   XF86MonBrightnessDown repeat=true  allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "10%-" ;}

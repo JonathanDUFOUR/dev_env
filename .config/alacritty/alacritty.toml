@@ -1,56 +1,21 @@
 [general]
 working_directory = '/home/jodufour'
+import = [
+    'themes/current'
+]
 
 [window]
                   padding = { x = 5, y = 5 }
               decorations = 'None'
-                  opacity = 1
-#                  opacity = 0.85
+                  opacity = 1.00
 decorations_theme_variant = 'Dark'
 
 [font]
-#     normal = { family = 'JetBrainsMono NerdFont Mono', style = 'Regular'    }
      normal = { family = 'Monaspice Kr NerdFont Mono', style = 'Regular'     }
        bold = { family = 'Monaspice Kr NerdFont Mono', style = 'Bold'        }
      italic = { family = 'Monaspice Kr NerdFont Mono', style = 'Italic'      }
 bold_italic = { family = 'Monaspice Kr NerdFont Mono', style = 'Bold Italic' }
        size = 10
-
-[colors]
-    transparent_background_colors = true
-draw_bold_text_with_bright_colors = false
-
-[colors.primary]
-foreground = '#FFD200'
-background = '#000000'
-
-[colors.cursor]
-  text = '#000000'
-cursor = '#FFD200'
-
-[colors.selection]
-      text = '#000000'
-background = '#0082E5'
-
-[colors.normal]
-  black = '#000000'
-    red = '#990000'
-  green = '#009900'
- yellow = '#999900'
-   blue = '#0000A9'
-magenta = '#B200A2'
-   cyan = '#00A6B2'
-  white = '#BFBFBF'
-
-[colors.bright]
-  black = '#666666'
-    red = '#E50000'
-  green = '#00D900'
- yellow = '#E5E500'
-   blue = '#0000FF'
-magenta = '#EF00E5'
-   cyan = '#00E5E5'
-  white = '#FFFFFF'
 
 [selection]
 save_to_clipboard = true
@@ -163,23 +128,9 @@ bindings = [
            { key = '?'         , mods = '            Shift', mode = '     ~Search| Vi', action = 'None' }, # SearchBackward
 
            # Define custom bindings
-           { key = 'F4'        , mods = '        Alt      '                           , action = 'Quit'              },
-           { key = 'F11'                                                              , action = 'ToggleFullscreen'  },
-#          { key = 'ArrowLeft' , mods = '        Alt      '                           , action = 'SelectPreviousTab' },
-#          { key = 'ArrowRight', mods = '        Alt      '                           , action = 'SelectNextTab'     },
            { key = 'C'         , mods = '        Alt      '                           , action = 'Copy'              },
            { key = 'L'         , mods = '        Alt      '                           , action = 'ClearLogNotice'    },
            { key = 'N'         , mods = '        Alt      '                           , action = 'CreateNewWindow'   },
            { key = 'Q'         , mods = '        Alt      '                           , action = 'Quit'              },
-#          { key = 'T'         , mods = '        Alt      '                           , action = 'CreateNewTab'      },
            { key = 'V'         , mods = '        Alt      '                           , action = 'Paste'             },
-#          { key = '1'         , mods = '        Alt      '                           , action = 'SelectTab1'        },
-#          { key = '2'         , mods = '        Alt      '                           , action = 'SelectTab2'        },
-#          { key = '3'         , mods = '        Alt      '                           , action = 'SelectTab3'        },
-#          { key = '4'         , mods = '        Alt      '                           , action = 'SelectTab4'        },
-#          { key = '5'         , mods = '        Alt      '                           , action = 'SelectTab5'        },
-#          { key = '6'         , mods = '        Alt      '                           , action = 'SelectTab6'        },
-#          { key = '7'         , mods = '        Alt      '                           , action = 'SelectTab7'        },
-#          { key = '8'         , mods = '        Alt      '                           , action = 'SelectTab8'        },
-#          { key = '9'         , mods = '        Alt      '                           , action = 'SelectTab9'        },
            ]

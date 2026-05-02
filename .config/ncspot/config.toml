@@ -1,0 +1,42 @@
+command_key         = ':'
+initial_screen      = "library"
+use_nerdfont        = true
+default_keybindings = false
+notify              = false
+bitrate             = 320
+shuffle             = true
+repeat              = "off"
+library_tabs        = [ "tracks", "playlists" ]
+
+[keybindings]
+     "Esc"       = "back"
+     "F1"        = "help"
+     "Up"        = "move up"
+     "Down"      = "move down"
+     "Right"     = "move right"
+     "Left"      = "move left"
+     "Enter"     = "play"
+     "Backspace" = "delete"
+ "Alt+Enter"     = "open selected"
+     "Space"     = "playpause"
+     "c"         = "clear"
+     "q"         = "quit"
+     "r"         = "repeat"
+"Ctrl+r"         = "reload"
+     "s"         = "shuffle"
+"Ctrl+s"         = "save current"
+     "t"         = "stop"
+ "Alt+1"         = "focus queue"
+ "Alt+2"         = "focus search"
+ "Alt+3"         = "focus library"
+     "["         = "seek -4242" # milliseconds
+     "]"         = "seek +4242" # milliseconds
+     "{"         = "seek -21212" # milliseconds
+     "}"         = "seek +21212" # milliseconds
+     ">"         = "next"
+     "<"         = "previous"
+
+[track_format]
+left = "%artists"
+center = "%title"
+right = "%saved %duration"
